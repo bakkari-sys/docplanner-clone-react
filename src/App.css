@@ -1,0 +1,360 @@
+.App {
+  text-align: center;
+}
+.main-nav
+{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    
+    
+}
+.main-menu
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    list-style-type: none;
+    padding-left:0.6em ;
+    flex-grow: 0.09;
+    
+    
+}
+.is-current
+{
+    color: #00b39b;
+}
+.main-menu  a:not(.is-current)
+{
+    text-decoration: none;
+    color: #ABABAB;
+
+}
+.main-menu  a:hover
+{
+    text-decoration: none;
+    color: #00b39b;
+
+}
+.dropdown 
+{
+    list-style-type: none;
+    position: relative;
+}
+.dropdown:hover .dropdown-content
+{
+   display: flex;
+   flex-direction: column;
+   right: 10px;
+}
+.dropdown-content
+{
+   
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    text-align: left;
+    background: #fff;
+    box-shadow: -10px 10px 10px 10px whitesmoke;
+   
+}
+  
+.dropdown-content li 
+{
+    padding:4px;
+}
+.dropdown-content li:hover
+{
+    box-shadow: -10px 5px 10px 0 whitesmoke;
+    
+}
+.list-dropdown-content
+{
+    list-style-type: none;
+}
+.logo-nav-bar
+{
+    width: 268px;
+    height: 33px;
+    padding-top: 3%;
+}
+img.lead__logo {
+  margin: 4px;
+}
+#introduction {
+  display: flex;
+  flex-direction: column;
+  margin: 67px;
+}
+#introduction img{
+  margin: auto;
+}
+section#introduction h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+  text-align: center;
+  font-weight: 500;
+}
+.paragrahes {
+  display: flex;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.paragrahes p {
+  padding: 10px;
+}
+#section2 {
+  display: flex;
+}
+.left-card {
+  background: #00ccb1;
+}
+.right-card {
+  background: #3d83df;
+}
+.card-section2{
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 22px 40px 0;
+  margin: 10px;
+  height: 400px;
+  /* height: 100%; */
+  text-align: left;
+}
+.card-section2 h2{
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  color: #fff;
+}
+.card-section2 span{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: hsla(0,0%,100%,.7);
+}
+.card-section2 select{
+  width: 100%;
+  border-radius: 0;
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  padding: 0 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.card-section2 img {width: 400px;height: 250px;position: absolute;
+}
+img.computer_figure {
+  margin-left: 242px;
+}
+section#section3 {
+  display: flex;
+  margin: 40px auto;
+  text-align: left;
+}
+#section3 h3 {
+  color: #00b39b;
+  float: left;
+  width: 33%;
+  font-size: 26px;
+  margin: .25em 0 .35em;
+  padding-right: 1em;
+  font-weight: 500;
+}
+ul.brands li {
+  list-style: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 5px 15px;
+}
+.parteners svg{
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 10px;
+  fill: hsla(0,0%,67%,.7);
+}
+ul.brands li a:hover svg path {
+  color: #00b39b;
+  fill:#00b39b;
+  
+}
+section#section4 {
+
+  background-color: #e0f9f7;
+  
+  padding: 15px 0;
+  
+  overflow: hidden;
+  }
+  #section4 .container{
+    display: flex;
+    align-items: space-between;
+  }
+  section#section4 .left-side:before {
+    content: "";
+    position: absolute;
+    right: 100px;
+    top: 45%;
+    background: url(./logo-section.png//logo-section.png) no-repeat;
+    width: 456px;
+    height: 435px;
+    pointer-events: none;
+  }
+  .left-side {
+    position: relative;
+    width: 50%;
+  }
+  .card-section4  {
+    background: #fff;
+    border-radius: 5px;
+    height: 215px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+    width: 200px;
+    margin: auto;
+    margin: 5px;
+    text-align: center;
+    padding: 15px;
+    font-size: .8125em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+  }
+  
+  
+  .card-section4.margin-top {
+     margin-top: 25px; 
+  }
+  .card6 {
+    width: 33.33%;
+    float: left;
+  }
+  .right-side {
+    grid-template-columns: auto auto;
+    display: grid;
+    width: 50%;
+  }
+  section#section5 h5 {
+    font-size: 35px;
+    color: #00ccb1;
+    font-weight: 500;
+  }
+  
+  section#section5 * {
+    max-width: 460px;
+    margin: 40px auto;
+    font-size: .875em;
+    text-align: center;
+  }
+  section#section5 p {
+    line-height: 24px;
+  }
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+  }
+  .card6 img {
+    width: 100%;
+  }
+  .card6 {
+    width: 31.33%;
+    float: left;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+    position: relative;
+    display: block;
+    color: #747474;
+    margin: 1%;
+  }
+  
+  .card6 button{
+    color: #fff;
+    background: #3d83df;
+    padding: 10px 15px;
+    height: 30px;
+    line-height: 0;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  .card6:hover {
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,.13);
+  }
+  .right-side h5{
+    
+    font-size: 24px;   
+    color: #00b39b;  
+    margin: .5em 0;   
+    font-weight: 500;
+  }
+  .left-side h4 {
+    line-height: 40px;
+    font-size: 34px;
+    color: #00b39b;
+    font-weight: 500;
+  }
+  .right-card img.computer_figure {
+    margin-left: 200px;
+  }
+  section#section4 p {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+  
+  }
+  footer {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #eef2f2;
+    font-size: 12px;
+    color: #ababab;
+    text-align: center;
+    padding: 16px 0;
+  
+  }
+  footer a {
+    color: #3d83df;
+  }
+  section#section6 {
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+section4 .container {
+  display: flex;
+  align-items: space-between;
+  overflow: hidden;
+  padding: 1.875em 0 .625em;
+  background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+  margin: 3.125rem auto 5.5rem;
+}
+section#section3 {
+  position: relative;
+  padding: 0 48px;
+}
+#section2 {
+  display: flex;
+  
+  
+  margin: 5rem  3.5rem;
+}
+#logo-section.png
+{
+  margin:200px;
+}
